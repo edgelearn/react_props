@@ -35,19 +35,19 @@ Make this change to the my-app/src/App.js file.
 
 ## Handling Null Props
 
-1. Add check of if (data) before accessing child attributes of data
+1. Add check of if (children) before accessing child prop of children
 
-2. Return null in render() if data doesn't exist
+2. Return children in render() if children exist, otherwise fall back to normal render
 
 ## Passing Multiple Props
 
-1. Use spread operator to pass multiple props from an object
+1. Use spread operator to get an object with all the other props except for children.
 
 ## Passing Children to Component
 
-1. Pass an instance of a Component to a child component
+1. Copy one of the Component.js files made before and render it within App.js and pass content as a child to it.
 
-2. Pass this.props.children to a Child component
+2. Use this.props.children inside Component.js to render the content.
 
 After you have completed all of the exercises, commit your changes with the following command:
 
